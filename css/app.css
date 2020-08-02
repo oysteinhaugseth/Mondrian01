@@ -1,2 +1,93 @@
-body {
+:root {
+  --red: #dc2824;
+  --yellow: #f8cb00;
+  --blue: #1355bd;
+  --black: #000;
+}
+
+div {
+  background-color: #fff;
+}
+
+section {
+  background-color: var(--black);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(12, [row] 1fr);
+  grid-template-columns: repeat(12, [col] 1fr);
+  gap: 10px;
+}
+
+.item1 {
+  grid-column: col 1 / span 6;
+}
+
+.item2 {
+  grid-column: col 7 / span 6;
+}
+
+.item1,
+.item2 {
+  grid-row: row 1 / span 5;
+}
+
+.item3 {
+  grid-column: col 1 / span 6;
+}
+
+.item4 {
+  grid-column: col 7 / span 6;
+}
+
+.item3,
+.item4 {
+  grid-row: row 6 / span 3;
+}
+
+.item5 {
+  grid-column: col 1 / span 2;
+}
+
+.item6 {
+  grid-column: col 3 / span 4;
+}
+
+.item7 {
+  grid-row: row 9 / span 3;
+}
+
+.item8 {
+	grid-row: row 12 / span 1;
+}
+
+.item7,
+.item8 {
+  grid-column: col 7 / span 4;
+}
+
+.item9 {
+  grid-column: col 11 / span 2;
+}
+
+.item5,
+.item6,
+.item9 {
+	grid-row: row 9 / span 4;
+}
+
+.red {
+  background-color: var(--red);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.blue {
+  background-color: var(--blue);
+}
+
+.black {
+  background-color: var(--black);
 }
